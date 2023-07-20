@@ -1,0 +1,22 @@
+.hairstyle {
+    max-width: 1550px;
+    margin: 0 auto;
+    padding: 0 25px;
+    padding-top: 65px;
+    display: flex;
+}
+.hairstyle__info {
+    max-width: 600px;
+}
+.hairstyle__title {
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+.hairstyle__desc {
+    margin-bottom: 50px;
+    
+}
+.hairstyle__img {
+    display: flex;
+    align-items: center;
+}
