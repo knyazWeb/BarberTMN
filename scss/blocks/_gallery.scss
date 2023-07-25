@@ -1,0 +1,82 @@
+.gallery {
+    position: relative;
+    text-align: center;
+
+    padding-bottom: 180px;
+
+    &::before {
+        content: "";
+        width: 283px;
+        height: 737px;
+
+        position: absolute;
+        top: -100px;
+        left: 0;
+        z-index: -1;
+
+        background-image: url("./../img/gallery/leftDecor.png");
+        background-repeat: no-repeat;
+    }
+
+    &::after {
+        content: "";
+        width: 310px;
+        height: 737px;
+
+        position: absolute;
+        top: -100px;
+        right: 0;
+        z-index: -1;
+
+        background-image: url("./../img/gallery/rightDecor.png");
+        background-repeat: no-repeat;
+    }
+}
+.gallery__title {
+    margin-bottom: 110px;
+}
+.gallery__items {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(200px, 435px));
+    justify-content: center;
+    gap: 37px;
+
+    margin-bottom: 77px;
+}
+.gallery__item {
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+
+    transition: all 0.2s ease-in;
+
+    &::before {
+        transition: opacity 0.2s ease-in;
+        content: "";
+        position: absolute;
+        z-index: 1;
+        left: 0px;
+        top: 0px;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(82, 150, 255, 0.35);
+    }
+
+    &:hover .gallery__img {
+        transform: scale(1.15);
+        filter: contrast(1.2) brightness(1.2) saturate(1.1);
+    }
+    &:hover::before {
+        opacity: 0;
+    }
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+.gallery__img {
+    transition: all 0.2s ease-in;
+}
+.gallery__btn {
+    padding: 23px 56px;
+}
