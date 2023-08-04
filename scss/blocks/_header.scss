@@ -6,12 +6,20 @@
     margin: 0 auto;
     padding: 0 25px;
     padding-top: 60px;
+    @include mediaLaptop {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, auto);
+        row-gap: 30px;
+    }
+   
 }
 .header__logo {
     margin-right: 100px;
+    @include mediaLaptop {
+        margin: 0 auto;
+    }
 }
 .header__logo-link {
-    display: flex;
     position: relative;
 }
 .header__logo-img {
@@ -28,10 +36,16 @@
     font-size: 40px;
     font-weight: 600;
     line-height: 53px;
+    
 }
+
+
 .nav__list {
     display: flex;
-    gap: 48px;
+    gap: 48px; 
+    @include mediaLaptop {
+        justify-content: center;
+    }
 }
 .nav__item {
     padding: 100px 10px 15px 10px;
@@ -49,12 +63,26 @@
         background-color: $btn-blue;
         color: $white;
     }
+    
+    
 }
+
 .header__panel {
     display: flex;
     justify-content: end;
     align-items: center;
     gap: 72px;
+    @include mediaLaptop {
+        justify-content: center;
+        gap: 50px;
+    }
+}
+
+.header__panel-btn{
+    @include mediaLaptop {
+        padding: 17px 27px;
+    }
+
 }
 
 .header__panel-notification {

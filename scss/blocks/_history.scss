@@ -3,7 +3,9 @@
     justify-content: center;
     position: relative;
 
-    padding-top: 200px;
+
+    padding-top: 100px;
+    padding-bottom: 50px;
 
     &::before {
         content: "";
@@ -13,9 +15,21 @@
         position: absolute;
         top: 40px;
         left: 0;
+        
 
         background-image: url("./../img/history/leftDecor.png");
         background-repeat: no-repeat;
+        
+        @include mediaLaptop {
+            opacity: 0.3;
+        }
+
+        @include mediaTablet {
+            display: none;
+        }
+
+        
+        
     }
 
     &::after {
@@ -30,26 +44,73 @@
 
         background-image: url("./../img/history/rightDecor.png");
         background-repeat: no-repeat;
+
+        @include mediaLaptop {
+            opacity: 0.25;
+        }
+
+        @include mediaTablet {
+            display: none;
+        }
+    }
+
+    @include mediaTablet {
+        justify-content: center;
+        text-align: center;
     }
 }
 .history__info {
     padding-top: 110px;
     max-width: 530px;
+    padding-right: 15px;
+    @include mediaLaptop {
+        max-width: 450px;
+        padding-top: 80px;
+    }
 }
 .history__title {
     font-size: 70px;
     margin-bottom: 80px;
+
+    @include mediaLaptop {
+        font-size: 55px;
+        margin-bottom: 30px;
+    }
+    @include mediaTablet {
+        font-size: 48px;
+    }
 }
 
 .history__desc {
     margin-bottom: 48px;
+    @include mediaLaptop {
+        margin-bottom: 30px;
+    }
 }
 
 .history__btn {
     margin-top: 60px;
     padding: 23px 40px;
+
+    @include mediaLaptop {
+        padding: 19px 35px;
+        margin-top: 40px;
+    }
 }
 
 .history__img {
     padding-right: 150px;
+    
+    @include mediaLaptop {
+        padding-right: 80px;
+    }
+    @include mediaTablet {
+        position: absolute;
+        z-index: -1;
+        top: 5%;
+
+        opacity: 0.09;
+    }
+    
+    
 }

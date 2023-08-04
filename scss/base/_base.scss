@@ -1,11 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Catamaran:wght@400;500;600;700&display=swap");
 
+html{
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: $white;
 
     font-family: $font-main;
     font-size: 25px;
     color: $text-color;
+
+    
 }
 
 .container {
@@ -33,6 +39,10 @@ body {
     &:hover {
         filter: grayscale(0.3);
     }
+
+    @include mediaLaptop {
+        font-size: 18px;
+    }
 }
 
 .text {
@@ -43,6 +53,11 @@ body {
     line-height: 37.6px;
     letter-spacing: 0.75px;
     opacity: 0.65;
+
+    @include mediaLaptop {
+        opacity: 1;
+        font-size: 21px;
+    }
 }
 
 .title {
@@ -51,6 +66,14 @@ body {
     font-size: 75px;
     font-weight: 700;
     line-height: 133.6%;
+
+    @include mediaLaptop {
+        font-size: 55px;
+    }
+
+    @include mediaTablet {
+        font-size: 48px;
+    }
 }
 
 .accent-word {
@@ -59,4 +82,12 @@ body {
     font-size: 75px;
     font-weight: 700;
     line-height: 100px;
+
+    @include mediaLaptop {
+        font-size: 55px;
+    }
+
+    @include mediaTablet {
+        font-size: 48px;
+    }
 }

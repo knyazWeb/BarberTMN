@@ -16,6 +16,15 @@
 
         background-image: url("./../img/gallery/leftDecor.png");
         background-repeat: no-repeat;
+
+
+        @include mediaLaptop {
+            opacity: 0.25;
+        }
+
+        @include mediaTablet {
+            display: none;
+        }
     }
 
     &::after {
@@ -30,10 +39,22 @@
 
         background-image: url("./../img/gallery/rightDecor.png");
         background-repeat: no-repeat;
+
+        @include mediaLaptop {
+            opacity: 0.25;
+        }
+
+        @include mediaTablet {
+            display: none;
+        }
     }
 }
 .gallery__title {
     margin-bottom: 110px;
+
+    @include mediaTablet {
+        margin-bottom: 60px;
+    }
 }
 .gallery__items {
     display: grid;
@@ -42,6 +63,14 @@
     gap: 37px;
 
     margin-bottom: 77px;
+    padding: 0 15px;
+
+    @include mediaTablet {
+        grid-template-columns: repeat(2, minmax(200px, 435px));
+        gap: 30px;
+    }
+
+    
 }
 .gallery__item {
     border-radius: 20px;
@@ -79,4 +108,8 @@
 }
 .gallery__btn {
     padding: 23px 56px;
+
+    @include mediaLaptop {
+        padding: 18px 51px;
+    }
 }

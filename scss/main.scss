@@ -1,8 +1,9 @@
 // Base
+@import './base/mixins';
 @import './base/reset';
 @import './base/vars';
 @import './base/base';
-@import './base/mixins';
+
 
 // Blocks
 @import './blocks/header';

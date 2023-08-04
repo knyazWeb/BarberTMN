@@ -3,7 +3,16 @@
     margin: 0 auto;
     padding: 0 25px;
     padding-top: 65px;
-    display: flex;
+    padding-bottom: 100px;
+    display: flex; 
+    
+    @include mediaTablet {
+        justify-content: center;
+        text-align: center;
+        padding-bottom: 125px;
+    }
+
+    
 }
 .hairstyle__info {
     max-width: 600px;
@@ -11,15 +20,31 @@
 .hairstyle__title {
     margin-top: 100px;
     margin-bottom: 30px;
+   
+    
 }
 .hairstyle__desc {
     margin-bottom: 108px;
+
+    @include mediaLaptop {
+        margin-bottom: 70px;
+    }
 }
 .hairstyle__img {
     display: flex;
     align-items: center;
+
+    @include mediaTablet {
+        position: absolute;
+        z-index: -1;
+        opacity: 0.09;
+    }
 }
 
 .hairstyle__btn {
     padding: 23px 40px;
+
+    @include mediaLaptop {
+        padding: 18px 35px;
+    }
 }

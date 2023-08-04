@@ -18,6 +18,14 @@
 
         background-image: url("./../img/footer/leftDecor.png");
         background-repeat: no-repeat;
+
+        @include mediaLaptop {
+            opacity: 0.25;
+        }
+
+        @include mediaTablet {
+            display: none;
+        }
     }
 
     &::after {
@@ -32,6 +40,18 @@
 
         background-image: url("./../img/footer/rightDecor.png");
         background-repeat: no-repeat;
+
+        @include mediaLaptop {
+            opacity: 0.25;
+        }
+
+        @include mediaTablet {
+            display: none;
+        }
+    }
+
+    @include mediaTablet {
+        padding-bottom: 50px;
     }
 }
 .footer__logo {
@@ -40,6 +60,10 @@
     position: relative;
 
     margin-bottom: 35px;
+    
+    @include mediaTablet {
+        margin-bottom: 25px;
+    }
 }
 .footer__logo-img {
     position: absolute;
@@ -68,6 +92,11 @@
     opacity: 0.65;
 
     margin-bottom: 47px;
+
+    @include mediaTablet {
+        font-size: 21px;
+        margin-bottom: 30px;
+    }
 }
 .footer__social {
     display: flex;
@@ -76,6 +105,7 @@
 
     padding-bottom: 45px;
     border-bottom: 1px solid $lightBlue-color;
+
 }
 .footer__social-item {
     height: 67px;
