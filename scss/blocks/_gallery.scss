@@ -70,6 +70,10 @@
         gap: 30px;
     }
 
+    @include mediaPhone {
+        grid-template-columns: repeat(1, minmax(200px, 435px));
+    }
+
     
 }
 .gallery__item {

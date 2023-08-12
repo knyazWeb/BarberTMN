@@ -66,7 +66,9 @@
     @include mediaLaptop {
         max-width: 450px;
         padding-top: 80px;
+        padding-left: 15px;
     }
+    
 }
 .history__title {
     font-size: 70px;
@@ -110,7 +112,11 @@
         top: 5%;
 
         opacity: 0.09;
+        padding-right: 0;
     }
     
+    @include hideImg {
+        display: none;
+    }
     
 }

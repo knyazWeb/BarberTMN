@@ -71,6 +71,10 @@
     left: 2px;
 
     transform: rotate(-60deg);
+
+    @include mediaPhone {
+        transform: scale(0.9) rotate(-60deg);
+    }
 }
 .footer__logo-text {
     position: relative;
@@ -81,6 +85,10 @@
     line-height: 80px;
 
     color: $lightBlue-color;
+
+    @include mediaPhone {
+        font-size: 35px; 
+    }
 }
 .footer__desc {
     font-size: 25px;

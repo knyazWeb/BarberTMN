@@ -26,6 +26,7 @@
         @include mediaTablet {
             display: none;
         }
+        
     }
 
     &::after {
@@ -53,7 +54,10 @@
         padding-top: 250px;
         padding-bottom: 150px;
     }
-
+    @include mediaPhone {
+        padding-top: 150px;
+    }
+    
 }
 .services__title {
     margin-bottom: 73px;

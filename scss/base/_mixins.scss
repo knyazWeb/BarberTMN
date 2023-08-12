@@ -15,3 +15,9 @@
         @content;
     }
 }
+
+@mixin hideImg{
+    @media screen and (max-width: $hideImgResolution) {
+        @content; 
+    }
+}
