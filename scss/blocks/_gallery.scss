@@ -17,7 +17,6 @@
         background-image: url("./../img/gallery/leftDecor.png");
         background-repeat: no-repeat;
 
-
         @include mediaLaptop {
             opacity: 0.25;
         }
@@ -73,8 +72,6 @@
     @include mediaPhone {
         grid-template-columns: repeat(1, minmax(200px, 435px));
     }
-
-    
 }
 .gallery__item {
     border-radius: 20px;
@@ -97,7 +94,8 @@
 
     &:hover .gallery__img {
         transform: scale(1.15);
-        filter: contrast(1.2) brightness(1.2) saturate(1.1);
+        -webkit-filter: contrast(1.2) brightness(1.2) saturate(1.1);
+                filter: contrast(1.2) brightness(1.2) saturate(1.1);
     }
     &:hover::before {
         opacity: 0;
@@ -116,4 +114,18 @@
     @include mediaLaptop {
         padding: 18px 51px;
     }
+}
+
+// View/Hide all properties
+
+.gallery__items--all {
+    margin-top: -33px;
+    transition: all 0.5s ease;
+}
+
+.gallery__items--hidden {
+    display: none;
+}
+.gallery__items--visuallyhidden {
+    opacity: 0;
 }

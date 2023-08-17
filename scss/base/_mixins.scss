@@ -1,23 +1,23 @@
-@mixin mediaLaptop{
+@mixin mediaLaptop {
     @media screen and (max-width: $laptop) {
         @content;
     }
 }
 
-@mixin mediaTablet{
+@mixin mediaTablet {
     @media screen and (max-width: $tablet) {
         @content;
     }
 }
 
-@mixin mediaPhone{
+@mixin mediaPhone {
     @media screen and (max-width: $phone) {
         @content;
     }
 }
 
-@mixin hideImg{
+@mixin hideImg {
     @media screen and (max-width: $hideImgResolution) {
-        @content; 
+        @content;
     }
 }

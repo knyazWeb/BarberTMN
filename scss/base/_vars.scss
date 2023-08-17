@@ -1,24 +1,26 @@
 // Fonts
-$font-main: 'Catamaran', sans-serif;
-
+$font-main: "Catamaran", sans-serif;
 
 // Colors
 $white: #fff;
-$text-color: #153461;
-$lightBlue-color: #99BAED;
-$card-border: #008FDD;
-$card-shadow: #D4E5FF;
-$btn-blue: #A3C1EF;
-$title-accent: #FBB400;
+$black: #000;
+$text-color: rgba(15, 34, 61, 0.65);
+$lightBlue-color: #99baed;
+$card-border: #008fdd;
+$card-shadow: #d4e5ff;
+$btn-blue: #a3c1ef;
+$title-accent: #fbb400;
 $title-color: #163561;
-$card: #FAFBFF;
-$card-img-bg: #E5ECFE;
-$circl-notify: #FF5050;
-$socials-color: #D3E5FF;
-$burger-bg: #ccd7e8;
+$card: #fafbff;
+$card-img-bg: #e5ecfe;
+$circl-notify: #ff5050;
+$socials-color: #d3e5ff;
+$burger-bg: #f6f9ff;
+$error-field: #fa8b8b;
 
 // Devices
 $laptop: 1400px;
 $tablet: 1050px;
 $phone: 650px;
-$hideImgResolution: 450px; 
+$hideImgResolution: 450px;
+  

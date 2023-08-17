@@ -19,14 +19,19 @@
                 </a>
             </div>
 
-            
             <div class="header__nav none">
                 <nav class="nav">
                     <ul class="nav__list">
                         <li><a href="#hairstyle" class="nav__item">Home</a></li>
-                        <li><a href="#history" class="nav__item">History</a></li>
-                        <li><a href="#services" class="nav__item">Service</a></li>
-                        <li><a href="#gallery" class="nav__item">Gallery</a></li>
+                        <li>
+                            <a href="#history" class="nav__item">History</a>
+                        </li>
+                        <li>
+                            <a href="#services" class="nav__item">Service</a>
+                        </li>
+                        <li>
+                            <a href="#gallery" class="nav__item">Gallery</a>
+                        </li>
                     </ul>
                 </nav>
             </div>
@@ -59,9 +64,6 @@
                     <button class="header__panel-btn btn">Appointment</button>
                 </div>
             </div>
-
-            
-
         </header>
 
         <main>
@@ -74,12 +76,14 @@
                         Inside You
                     </h1>
                     <p class="hairstyle__desc text">
-                        It is a long established fact that a reader will be
-                        distracted by the readable content of a page when
-                        looking at.
+                        Your hair makes a statement about you. Whether it’s
+                        long, short, curly, or straight, your hairstyle reflects
+                        your personality.
                     </p>
 
-                    <button class="hairstyle__btn btn">Get Started</button>
+                    <a href="#services" class="hairstyle__btn btn"
+                        >Get Started</a
+                    >
                 </div>
 
                 <div class="hairstyle__img">
@@ -98,14 +102,14 @@
                             Our <span class="accent-word">History</span>
                         </h1>
                         <p class="history__desc text">
-                            It is a long established fact that a reader will be
-                            distracted by the readable content of a page when
-                            looking at.
+                            The BarberTMN has been a part of Longmont for as
+                            long as the city has been in existence and back when
+                            Colorado wasn’t even a state yet!
                         </p>
                         <p class="history__desc text">
-                            It is a long established fact that a reader will be
-                            distracted by the readable content of a page when
-                            looking at.
+                            The barber shop has been continuously operating at
+                            its same location since 1870, earning it the
+                            distinction of the longest running business.
                         </p>
                         <button class="history__btn btn">Learn more</button>
                     </div>
@@ -129,8 +133,8 @@
                             <h3 class="services__card-title">Hair Cut</h3>
 
                             <p class="services__card-desc">
-                                long established fact that a reacted by the
-                                readable content ofhen looking at.
+                                Our most popular service. Comes with
+                                complimentary hot lathe neck shave.
                             </p>
                         </div>
                         <div class="services__card">
@@ -143,8 +147,7 @@
                             <h3 class="services__card-title">Beard Cut</h3>
 
                             <p class="services__card-desc">
-                                long established fact that a reacted by the
-                                readable content ofhen looking at.
+                                Keeps your beard looking well-kept and classy.
                             </p>
                         </div>
                         <div class="services__card">
@@ -157,8 +160,8 @@
                             <h3 class="services__card-title">Facial Pack</h3>
 
                             <p class="services__card-desc">
-                                long established fact that a reacted by the
-                                readable content ofhen looking at.
+                                Make your hairstyle more elegant with the help
+                                of our Facial Pack
                             </p>
                         </div>
                     </div>
@@ -214,7 +217,56 @@
                         </div>
                     </div>
 
-                    <button class="gallery__btn btn">View All</button>
+                    <div
+                        class="gallery__items gallery__items--all gallery__items--hidden gallery__items--visuallyhidden"
+                    >
+                        <div class="gallery__item">
+                            <img
+                                src="./img/gallery/gallery (1).jpg"
+                                alt="work"
+                                class="gallery__img"
+                            />
+                        </div>
+                        <div class="gallery__item">
+                            <img
+                                src="./img/gallery/gallery (2).jpg"
+                                alt="work"
+                                class="gallery__img"
+                            />
+                        </div>
+                        <div class="gallery__item">
+                            <img
+                                src="./img/gallery/gallery (3).jpg"
+                                alt="work"
+                                class="gallery__img"
+                            />
+                        </div>
+                        <div class="gallery__item">
+                            <img
+                                src="./img/gallery/gallery (4).jpg"
+                                alt="work"
+                                class="gallery__img"
+                            />
+                        </div>
+                        <div class="gallery__item">
+                            <img
+                                src="./img/gallery/gallery (5).jpg"
+                                alt="work"
+                                class="gallery__img"
+                            />
+                        </div>
+                        <div class="gallery__item">
+                            <img
+                                src="./img/gallery/gallery (6).jpg"
+                                alt="work"
+                                class="gallery__img"
+                            />
+                        </div>
+                    </div>
+
+                    <button class="gallery__btn btn">
+                        <span>View All</span>
+                    </button>
                 </section>
             </div>
         </main>
@@ -231,8 +283,8 @@
                 </div>
 
                 <p class="footer__desc">
-                    It is a long established fact that a reader will be
-                    <br />distracted by the readable
+                    COPYRIGHT © <span class="year">2023</span> BARBERTMN
+                    BARBERSHOP - ALL RIGHTS RESERVED.
                 </p>
 
                 <div class="footer__social">
@@ -265,8 +317,44 @@
                     </div>
                 </div>
             </footer>
+
+            <div class="popup-fade">
+                <div class="popup">
+                    <button class="popup-close"></button>
+                    <form id="appointment-form">
+                        <div class="popup__form">
+                            <p class="popup__title">Make an appointment</p>
+                            <input
+                                id="popup__input-name"
+                                class="popup__input"
+                                type="text"
+                                placeholder="Name"
+                                autocomplete="off"
+                            />
+                            <input
+                                id="popup__input-phone"
+                                class="popup__input"
+                                type="text"
+                                placeholder="Phone"
+                                autocomplete="off"
+                            />
+                            <button class="popup__btn">
+                                <span>Submit</span>
+                                <div class="success">
+                                    <img
+                                        src="./img/header/success.svg"
+                                        alt="success"
+                                    />
+                                </div>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
         </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
-    <script src="./js/scripts.js"></script>
+        <script src="./libs/phoneMask/mask.js"></script>
+        <script src="./libs/phoneMask/mask_list.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+        <script src="./js/scripts.js"></script>
     </body>
 </html>

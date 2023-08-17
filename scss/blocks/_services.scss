@@ -26,7 +26,6 @@
         @include mediaTablet {
             display: none;
         }
-        
     }
 
     &::after {
@@ -57,7 +56,6 @@
     @include mediaPhone {
         padding-top: 150px;
     }
-    
 }
 .services__title {
     margin-bottom: 73px;
@@ -75,7 +73,6 @@
         margin-bottom: 0;
         font-size: 48px;
         line-height: 0.5;
-        
     }
 }
 
@@ -91,10 +88,10 @@
         flex-direction: column;
         row-gap: 45px;
         padding: 30px 40px 70px;
-    
     }
 }
 .services__card {
+    flex-basis: 33.3%;
     padding: 50px 40px 70px;
 
     background-color: $card;
@@ -112,7 +109,7 @@
         .services__card-desc {
             color: $white;
         }
-        
+
         @include mediaTablet {
             box-shadow: 10px 15px 20px $card-shadow;
         }

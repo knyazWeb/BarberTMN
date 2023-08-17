@@ -3,7 +3,6 @@
     justify-content: center;
     position: relative;
 
-
     padding-top: 100px;
     padding-bottom: 50px;
 
@@ -15,11 +14,10 @@
         position: absolute;
         top: 40px;
         left: 0;
-        
 
         background-image: url("./../img/history/leftDecor.png");
         background-repeat: no-repeat;
-        
+
         @include mediaLaptop {
             opacity: 0.3;
         }
@@ -27,9 +25,6 @@
         @include mediaTablet {
             display: none;
         }
-
-        
-        
     }
 
     &::after {
@@ -68,7 +63,6 @@
         padding-top: 80px;
         padding-left: 15px;
     }
-    
 }
 .history__title {
     font-size: 70px;
@@ -102,7 +96,7 @@
 
 .history__img {
     padding-right: 150px;
-    
+
     @include mediaLaptop {
         padding-right: 80px;
     }
@@ -114,9 +108,8 @@
         opacity: 0.09;
         padding-right: 0;
     }
-    
+
     @include hideImg {
         display: none;
     }
-    
 }

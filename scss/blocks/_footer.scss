@@ -60,7 +60,7 @@
     position: relative;
 
     margin-bottom: 35px;
-    
+
     @include mediaTablet {
         margin-bottom: 25px;
     }
@@ -87,7 +87,7 @@
     color: $lightBlue-color;
 
     @include mediaPhone {
-        font-size: 35px; 
+        font-size: 35px;
     }
 }
 .footer__desc {
@@ -113,7 +113,6 @@
 
     padding-bottom: 45px;
     border-bottom: 1px solid $lightBlue-color;
-
 }
 .footer__social-item {
     height: 67px;
@@ -134,4 +133,8 @@
     position: relative;
     transform: translateY(-50%);
     top: 50%;
+}
+
+.year {
+    font-family: sans-serif, monospace;
 }

@@ -4,8 +4,8 @@
     padding: 0 25px;
     padding-top: 55px;
     padding-bottom: 100px;
-    display: flex; 
-    
+    display: flex;
+
     @include mediaTablet {
         justify-content: center;
         text-align: center;
@@ -14,8 +14,6 @@
     @include hideImg {
         padding-bottom: 0;
     }
-
-    
 }
 .hairstyle__info {
     max-width: 600px;
@@ -23,8 +21,6 @@
 .hairstyle__title {
     margin-top: 100px;
     margin-bottom: 30px;
-   
-    
 }
 .hairstyle__desc {
     margin-bottom: 108px;
@@ -50,6 +46,7 @@
 
 .hairstyle__btn {
     padding: 23px 40px;
+    cursor: pointer;
 
     @include mediaLaptop {
         padding: 18px 35px;
