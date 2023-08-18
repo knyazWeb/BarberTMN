@@ -34,10 +34,6 @@ body {
 
     transition: all 0.25s linear;
 
-    &:hover {
-        filter: grayscale(0.3);
-    }
-
     @include mediaLaptop {
         font-size: 18px;
     }
@@ -91,6 +87,10 @@ body {
 // body lock
 
 body.lock {
-    height: 100vh;
     overflow-y: hidden;
+
+    @include mediaTablet {
+        position: fixed;
+        overflow: auto;
+    }
 }

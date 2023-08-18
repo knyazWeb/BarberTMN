@@ -91,19 +91,6 @@
         height: 100%;
         background-color: rgba(82, 150, 255, 0.35);
     }
-
-    &:hover .gallery__img {
-        transform: scale(1.15);
-        -webkit-filter: contrast(1.2) brightness(1.2) saturate(1.1);
-                filter: contrast(1.2) brightness(1.2) saturate(1.1);
-    }
-    &:hover::before {
-        opacity: 0;
-    }
-
-    &:hover {
-        cursor: pointer;
-    }
 }
 .gallery__img {
     transition: all 0.2s ease-in;

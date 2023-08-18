@@ -1,0 +1,123 @@
+@media (hover: hover) {
+    // Base
+
+    .btn:hover {
+        -webkit-filter: grayscale(0.3);
+        filter: grayscale(0.3);
+    }
+
+    // Header
+    .nav__item:hover {
+        background-color: #a3c1ef;
+        color: #fff;
+    }
+
+    // Services
+
+    .services__card:hover {
+        background-color: $lightBlue-color;
+
+        box-shadow: 20px 40px 47px $card-shadow;
+
+        .services__card-title,
+        .services__card-desc {
+            color: $white;
+        }
+
+        @include mediaTablet {
+            box-shadow: 10px 15px 20px $card-shadow;
+        }
+    }
+
+    // Gallery
+
+    .gallery__item:hover .gallery__img {
+        transform: scale(1.15);
+        -webkit-filter: contrast(1.2) brightness(1.2) saturate(1.1);
+        filter: contrast(1.2) brightness(1.2) saturate(1.1);
+    }
+    .gallery__item:hover::before {
+        opacity: 0;
+    }
+
+    .gallery__item:hover {
+        cursor: pointer;
+    }
+
+    // Footer
+
+    .footer__social-item:hover {
+        background-color: $lightBlue-color;
+        cursor: pointer;
+    }
+
+    // Popup
+
+    .popup__form button:hover {
+        box-shadow: 0px 0px 10px 1px $text-color;
+        width: 40%;
+        font-weight: 700;
+    }
+}
+
+@media (hover: none) {
+    // Base
+
+    .btn:active {
+        -webkit-filter: grayscale(0.3);
+        filter: grayscale(0.3);
+    }
+
+    // Header
+    .nav__item:active {
+        background-color: #a3c1ef;
+        color: #fff;
+    }
+
+    // Services
+
+    .services__card:active {
+        background-color: $lightBlue-color;
+
+        box-shadow: 20px 40px 47px $card-shadow;
+
+        .services__card-title,
+        .services__card-desc {
+            color: $white;
+        }
+
+        @include mediaTablet {
+            box-shadow: 10px 15px 20px $card-shadow;
+        }
+    }
+
+    // Gallery
+
+    .gallery__item:active .gallery__img {
+        transform: scale(1.15);
+        -webkit-filter: contrast(1.2) brightness(1.2) saturate(1.1);
+        filter: contrast(1.2) brightness(1.2) saturate(1.1);
+    }
+    .gallery__item:active::before {
+        opacity: 0;
+    }
+
+    .gallery__item:active {
+        cursor: pointer;
+    }
+
+    // Footer
+
+    .footer__social-item:active {
+        background-color: $lightBlue-color;
+        cursor: pointer;
+    }
+
+    // Popup
+
+    .popup__form button:active {
+        box-shadow: 0px 0px 10px 1px $text-color;
+        width: 40%;
+        font-weight: 700;
+    }
+}

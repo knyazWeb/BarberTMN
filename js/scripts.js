@@ -1,4 +1,7 @@
 $(document).ready(function () {
+
+    
+
     const clearFields = () => {
         $("#popup__input-name").val("");
         $("#popup__input-phone").val("");
@@ -13,9 +16,27 @@ $(document).ready(function () {
         $("body").toggleClass("lock");
     };
 
+    if ('ontouchstart' in document.documentElement) {
+        // If it does, remove the :hover CSS style on touchstart
+        $(document).on('touchstart', function(){
+          $('*').removeClass('hover');
+        });
+        
+        // Add the :hover CSS style on mouseenter
+        $('*').on('mouseenter', function(){
+          $(this).addClass('hover');
+        });
+        
+        // Remove the :hover CSS style on mouseleave
+        $('*').on('mouseleave', function(){
+          $(this).removeClass('hover');
+        });
+    }
+
     // Hedear scripts
     $(".header__menu-phone").click(function () {
         toggleMenu();
+        
     });
 
     $(".nav__item").click(function () {
@@ -29,11 +50,12 @@ $(document).ready(function () {
     $(".header__panel-btn").click(function () {
         $(".popup-fade").fadeIn("fast");
         $("body").addClass("lock");
+        
         return false;
     });
     $(".popup-close").click(function () {
         $(this).parents(".popup-fade").fadeOut("fast");
-
+        
         toggleMenu();
         clearFields();
         return false;

@@ -122,11 +122,6 @@
     background-color: $socials-color;
 
     transition: all 0.2s ease-in;
-
-    &:hover {
-        background-color: $lightBlue-color;
-        cursor: pointer;
-    }
 }
 .footer__social-img {
     text-align: center;

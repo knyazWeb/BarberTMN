@@ -36,7 +36,19 @@
 
             background-color: $burger-bg;
 
-            animation: view 0.2s ease 1;
+            -webkit-animation: view 0.2s ease 1;
+
+                    animation: view 0.2s ease 1;
+
+            @-webkit-keyframes view {
+                0% {
+                    opacity: 0.96;
+                }
+
+                100% {
+                    opacity: 1;
+                }
+            }
 
             @keyframes view {
                 0% {
@@ -67,7 +79,7 @@
     position: absolute;
     bottom: 10px;
     left: 14px;
-
+    
     transform: rotate(-60deg);
 
     @include mediaPhone {
@@ -119,17 +131,16 @@
     line-height: 33px;
 
     transition: all 0.15s ease-in;
-
-    &:hover {
-        background-color: $btn-blue;
-        color: $white;
+    @include mediaLaptop {
+        padding-top: 15px;
     }
-
     @include mediaPhone {
         color: $lightBlue-color;
         padding: 10px;
     }
 }
+
+
 
 .header__panel {
     display: flex;

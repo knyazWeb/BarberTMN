@@ -100,20 +100,6 @@
     border-radius: 29px;
 
     transition: all 0.2s ease-in-out;
-    &:hover {
-        background-color: $lightBlue-color;
-
-        box-shadow: 20px 40px 47px $card-shadow;
-
-        .services__card-title,
-        .services__card-desc {
-            color: $white;
-        }
-
-        @include mediaTablet {
-            box-shadow: 10px 15px 20px $card-shadow;
-        }
-    }
 
     @include mediaTablet {
         padding: 35px 25px 50px;

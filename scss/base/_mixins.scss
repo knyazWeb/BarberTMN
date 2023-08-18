@@ -21,3 +21,8 @@
         @content;
     }
 }
+@mixin popupHeight {
+    @media screen and (max-height: $popupHeight) {
+        @content;
+    }
+}
