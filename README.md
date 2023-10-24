@@ -1,1 +1,2 @@
-GitHub Page (BarberTMN) - https://knyazweb.github.io/BarberTMN/
+# BarberTMN
+GitHub Page  - [Demo](https://knyazweb.github.io/BarberTMN/)
