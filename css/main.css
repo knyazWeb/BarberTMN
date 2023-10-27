@@ -259,42 +259,8 @@ body.lock {
   }
 }
 @media (hover: none) {
-  .btn:active {
-    -webkit-filter: grayscale(0.3);
-    filter: grayscale(0.3);
-  }
-  .nav__item:active {
-    background-color: #a3c1ef;
-    color: #fff;
-  }
-  .services__card:active {
-    background-color: #99baed;
-    -webkit-box-shadow: 20px 40px 47px #d4e5ff;
-            box-shadow: 20px 40px 47px #d4e5ff;
-  }
-  .services__card:active .services__card-title,
-  .services__card:active .services__card-desc {
-    color: #fff;
-  }
-}
-@media screen and (hover: none) and (max-width: 1050px) {
-  .services__card:active {
-    -webkit-box-shadow: 10px 15px 20px #d4e5ff;
-            box-shadow: 10px 15px 20px #d4e5ff;
-  }
-}
-@media (hover: none) {
-  .gallery__item:active .gallery__img {
-    -webkit-transform: scale(1.15);
-            transform: scale(1.15);
-    -webkit-filter: contrast(1.2) brightness(1.2) saturate(1.1);
-    filter: contrast(1.2) brightness(1.2) saturate(1.1);
-  }
-  .gallery__item:active::before {
-    opacity: 0;
-  }
-  .gallery__item:active {
-    cursor: pointer;
+  .gallery__item::before {
+    display: none;
   }
   .footer__social-item:active {
     background-color: #99baed;
